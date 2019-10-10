@@ -1,0 +1,28 @@
+<div class="container">
+    <div style="text-align: center">
+     <h1 class="h2"> Lista De Pasajeros</h1> 
+    </div>
+<table class="table table-dark table-hover">
+<thead>
+    <tr >
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Tipo De Silla</th>
+        <th>Numero De Silla</th>
+        <th></th>
+        <th></th>
+    </tr>
+</thead>
+
+    <tr *ngFor="let avion of aviones">
+        <td>{{avion.id}}</td>
+        <td>{{avion.nombre}}</td>
+        <td> <span *ngIf="avion.tiposilla===true;"> Tipo de Silla </span> </td>
+        <!-- <td>{{avion.tiposilla}}</td> --> 
+        <td>{{avion.numsilla}} </td>
+        <td>Editar</td>
+        <td>Eliminar</td>
+    </tr>
+
+</table>
+</div>

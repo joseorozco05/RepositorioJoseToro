@@ -1,0 +1,36 @@
+<!--Jose Orozco ejercicio de Jose Toro-->
+
+<div class="container">
+    <p>Agregar </p>
+    <div class="form-group">
+        <li class="nav-item">
+        <label>Identificación:
+            <input [(ngModel)]= "avion.id" placeholder="Digite Identificación" type="text"/>
+        </label>
+        </li>
+        <li class="nav-item">
+        <label>Nombre:
+            <input [(ngModel)]= "avion.nombre" placeholder="Digite Nombre" type="text"/>
+        </label>
+    </li>
+        <li class="nav-item">
+        <label>: Ejecutiva
+                <input type="checkbox" [(ngModel)]= "avion.tiposilla" />
+        </label>
+    </li>
+    <li class="nav-item">
+        <label>: Economica
+                <input type="checkbox" [(ngModel)]= "avion.tiposilla" />
+        </label>
+    </li>
+        <li class="nav-item">
+        <label>Numero de Silla:
+                <input [(ngModel)]= "avion.numsilla" placeholder="Digite Numero de Silla " type="text"/>
+        </label>
+    </li>
+    </div>
+
+    <div >
+        <button (click)="add()" class="btn btn-primary"> Agregar</button>
+    </div>
+    </div>
